@@ -27,7 +27,7 @@
     combos {
         compatible = "zmk,combos";
 // top
-COMBO(esc,    &kp ESC,     LT4 LT3,     default_layer,          40, 150)
+COMBO(esc,    &kp ESC,     LT4 LT3,     1,          40, 150)
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4

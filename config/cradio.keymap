@@ -27,6 +27,7 @@
     combos {
         compatible = "zmk,combos";
 COMBO(esc,    &kp ESC,     LT4 LT3,     1,          40, 150)
+    };
 };
 
 // Home row mods macro

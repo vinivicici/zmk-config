@@ -23,7 +23,7 @@
 
         layer_0 {
             bindings = <
-&kp Q                 &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp A                 &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &home_row LEFT_GUI A  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                                       &trans  &trans    &trans  &trans

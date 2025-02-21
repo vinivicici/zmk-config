@@ -3,38 +3,130 @@
 
 / {
     behaviors {
-        home_row: home_row {
+        asl: alpha_shift_l {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOME_ROW";
+            label = "ASL";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <170>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <30 31 32 33>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <32 33>;
             hold-trigger-on-release;
+        };
+
+        asr: alpha_shift_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ASR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <30 31>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <170>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+
+        aml: alpha_mods_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <170>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <32 33>;
+        };
+
+        amr: alpha_mods_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <170>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <30 31>;
+        };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            layers = <0>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <150>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        DEF {
             bindings = <
-&kp A                 &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&home_row LEFT_GUI A  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                      &trans  &trans    &trans  &trans
+&kp Q            &kp W        &kp E         &kp R         &kp T        &kp Y      &kp U            &kp I         &kp O            &kp P
+&aml LEFT_GUI A  &aml LALT S  &asl LSHFT D  &aml LCTRL F  &kp G        &kp H      &amr LCTRL J     &asr LSHFT K  &amr LALT L      &amr LEFT_GUI SQT
+&kp Z            &kp X        &kp C         &kp V         &kp B        &kp N      &kp M            &kp COMMA     &ht RALT PERIOD  &kp SLASH
+                                            &lt 1 SPACE   &lt 4 TAB    &lt 3 RET  &lt 4 BACKSPACE
             >;
         };
-        extra1 {
-            status = "reserved";
+
+        NAV {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
         };
 
-        extra2 {
-            status = "reserved";
+        NUM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+
+        SYM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+
+        SYS {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &studio_unlock    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans            &trans  &trans
+            >;
         };
     };
 };

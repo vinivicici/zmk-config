@@ -84,16 +84,25 @@
         del {
             bindings = <&kp DEL>;
             key-positions = <8 9>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
         };
 
         star {
             bindings = <&kp STAR>;
             key-positions = <2 3>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
         };
 
         slash {
             bindings = <&kp SLASH>;
             key-positions = <12 13>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
         };
     };
 

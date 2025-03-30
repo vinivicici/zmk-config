@@ -1,5 +1,10 @@
 # zmk-config
-
+1부. 목적-필요 사이트 가입-부품 주문-조립(납땜)
+https://blog.naver.com/casjc02/223766461735
+2부. 펌웨어 설치(깃허브에 저장소 만들고 다른 사람의 저장소를 복사해 오기)
+https://blog.naver.com/casjc02/223766461962
+3부. 키맵 변경-참고 문서-타자 시험
+https://blog.naver.com/casjc02/223766462185
 ## Modules
 
 ## Boards and Keymaps

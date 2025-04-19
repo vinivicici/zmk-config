@@ -120,37 +120,37 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &kp LC(V)  &kp UP_ARROW    &kp DELETE  &kp LC(Z)
-&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT   &none
-&trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans          &trans      &trans
-                        &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &kp K_REDO  &kp K_COPY  &kp UP_ARROW    &kp K_PASTE  &kp K_UNDO
+&trans  &trans  &trans  &trans  &trans    &trans      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT    &kp K_CUT
+&trans  &trans  &trans  &trans  &trans    &trans      &kp HOME    &kp PAGE_DOWN   &kp PAGE_UP  &kp END
+                        &trans  &trans    &trans      &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT     &trans  &trans  &trans  &trans  &trans
+&kp SEMI   &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH     &trans  &trans  &trans  &trans  &trans
+                           &kp N0  &kp MINUS    &trans  &trans
             >;
         };
 
         SYM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE    &trans  &trans  &trans  &trans  &trans
+&kp COLON       &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS           &trans  &trans  &trans  &trans  &trans
+&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PIPE           &trans  &trans  &trans  &trans  &trans
+                                               &trans                &trans             &trans  &trans
             >;
         };
 
         SYS {
             bindings = <
-&trans          &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &studio_unlock    &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR        &trans  &trans  &trans  &trans  &trans
-                                            &trans        &trans            &trans  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans            &trans  &trans  &trans  &trans  &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &studio_unlock    &trans  &trans  &trans  &trans  &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &bt BT_CLR        &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans            &trans  &trans
             >;
         };
     };

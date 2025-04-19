@@ -120,9 +120,9 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp UP_ARROW    &trans     &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans     &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LC(V)  &kp LC(C)       &kp LC(V)     &kp LC(Z)
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
+&trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans          &trans        &trans
                         &trans  &trans    &trans  &trans
             >;
         };

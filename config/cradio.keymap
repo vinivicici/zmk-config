@@ -104,6 +104,11 @@
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
+
+        ralt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <16 17>;
+        };
     };
 
     keymap {

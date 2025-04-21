@@ -120,10 +120,10 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &kp LC(C)   &kp UP_ARROW    &kp LC(V)    &kp LC(Z)
-&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT    &kp LC(X)
-&trans  &trans  &trans  &trans  &trans    &trans  &kp HOME    &kp END         &kp PAGE_UP  &kp PAGE_DOWN
-                        &trans  &trans    &trans  &kp DELETE
+&trans  &trans  &trans  &trans  &trans    &kp LS(HOME)  &kp LC(C)   &kp UP_ARROW    &kp LC(V)    &kp LC(Z)
+&trans  &trans  &trans  &trans  &trans    &kp LS(END)   &kp LEFT    &kp DOWN_ARROW  &kp RIGHT    &kp LC(X)
+&trans  &trans  &trans  &trans  &trans    &trans        &kp HOME    &kp END         &kp PAGE_UP  &kp PAGE_DOWN
+                        &trans  &trans    &trans        &kp DELETE
             >;
         };
 

@@ -122,9 +122,9 @@
 
         DEF {
             bindings = <
-&kp Q  &kp W         &kp E            &kp R         &kp T        &kp Y      &kp U              &kp I        &kp O            &kp P
-&kp A  &aml LCTRL S  &asl LEFT_ALT D  &aml LSHFT F  &kp G        &kp H      &amr LEFT_SHIFT J  &asr LALT K  &amr LCTRL L     &amr LEFT_GUI SQT
-&kp Z  &kp X         &kp C            &kp V         &kp B        &kp N      &kp M              &kp COMMA    &ht RALT PERIOD  &lt 1 SLASH
+&kp Q  &kp W            &kp E         &kp R         &kp T        &kp Y      &kp U              &kp I         &kp O            &kp P
+&kp A  &aml LEFT_ALT S  &asl LCTRL D  &aml LSHFT F  &kp G        &kp H      &amr LEFT_SHIFT J  &asr LCTRL K  &amr LEFT_ALT L  &amr LEFT_GUI SQT
+&kp Z  &kp X            &kp C         &kp V         &kp B        &kp N      &kp M              &kp COMMA     &kp PERIOD       &lt 1 SLASH
                                       &lt 1 SPACE   &lt 4 TAB    &lt 3 RET  &lt 2 BACKSPACE
             >;
         };

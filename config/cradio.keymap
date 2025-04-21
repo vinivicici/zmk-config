@@ -155,10 +155,10 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp LS(HOME)  &kp LC(C)  &kp UP_ARROW    &kp LC(V)  &kp LC(Z)
-&trans  &trans  &trans  &trans  &trans    &kp LS(END)   &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp LC(X)
-&trans  &trans  &trans  &trans  &trans    &kp LC(A)     &home__    &end__          &trans     &trans
-                        &trans  &trans    &kp DELETE    &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &home__    &kp UP_ARROW    &end__     &trans
+&trans  &trans  &trans  &trans  &trans    &kp LC(A)   &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans    &kp LC(Z)   &kp LC(X)  &kp LC(C)       &kp LC(V)  &trans
+                        &trans  &trans    &kp DELETE  &trans
             >;
         };
 

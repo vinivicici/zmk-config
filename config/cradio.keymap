@@ -140,7 +140,7 @@
 
         NUM {
             bindings = <
-&kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT     &trans  &trans  &trans  &trans  &trans
+&trans     &kp N7  &kp N8  &kp N9  &trans       &trans  &trans  &trans  &trans  &trans
 &kp SEMI   &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH     &trans  &trans  &trans  &trans  &trans
                            &kp N0  &kp MINUS    &trans  &trans
@@ -149,10 +149,10 @@
 
         SYM {
             bindings = <
-&kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK  &kp UNDER             &kp RIGHT_BRACE          &trans  &trans  &trans  &trans  &trans
-&kp COLON       &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &trans  &trans  &trans  &trans  &trans
-&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PIPE                 &trans  &trans  &trans  &trans  &trans
-                                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans
+&trans     &kp AMPERSAND    &kp ASTERISK  &kp UNDER             &trans                   &trans  &trans  &trans  &trans  &trans
+&kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PIPE                 &trans  &trans  &trans  &trans  &trans
+                                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans
             >;
         };
 

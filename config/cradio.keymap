@@ -81,14 +81,6 @@
             require-prior-idle-ms = <150>;
         };
 
-        del {
-            bindings = <&kp DEL>;
-            key-positions = <8 9>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
         ralt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <16 17>;

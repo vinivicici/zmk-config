@@ -27,7 +27,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <170>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-on-release;
             hold-trigger-key-positions = <31 30>;
         };
@@ -68,7 +68,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <170>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-on-release;
             hold-trigger-key-positions = <32 33>;
         };

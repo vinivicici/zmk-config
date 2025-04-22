@@ -129,6 +129,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <8 9>;
         };
+
+        return {
+            bindings = <&kp ENTER>;
+            key-positions = <3 31>;
+        };
     };
 
     keymap {

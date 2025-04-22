@@ -72,6 +72,16 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <32 33>;
         };
+
+        alt_f4: alt_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_F4";
+            bindings = <&kp R>, <&kp F4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
     };
 
     combos {
@@ -141,7 +151,7 @@
 
         DEF {
             bindings = <
-&kp Q  &kp W            &kp E         &kp R                 &kp T        &kp Y      &kp U                  &kp I         &kp O            &kp P
+&kp Q  &kp W            &kp E         &alt_f4               &kp T        &kp Y      &kp U                  &kp I         &kp O            &kp P
 &kp A  &aml LEFT_ALT S  &aml LCTRL D  &s_left LEFT_SHIFT F  &kp G        &kp H      &s_right LEFT_SHIFT J  &amr LCTRL K  &amr LEFT_ALT L  &amr LEFT_GUI SQT
 &kp Z  &kp X            &kp C         &kp V                 &kp B        &kp N      &kp M                  &kp COMMA     &kp PERIOD       &lt 1 SLASH
                                       &lt 1 SPACE           &lt 4 TAB    &lt 3 RET  &lt 2 BACKSPACE

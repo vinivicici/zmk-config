@@ -82,6 +82,46 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
+
+        LEFTj: LEFTj {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFTJ";
+            bindings = <&s_right LEFT_SHIFT J>, <&kp LEFT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        DOWNk: DOWNk {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWNK";
+            bindings = <&kp K>, <&kp DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        RIGHTl: RIGHTl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHTL";
+            bindings = <&kp SQT>, <&kp RIGHT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        UPtick: UPtick {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UPTICK";
+            bindings = <&kp L>, <&kp UP_ARROW>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
     };
 
     combos {

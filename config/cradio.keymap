@@ -147,7 +147,7 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
         };
 
         plus {

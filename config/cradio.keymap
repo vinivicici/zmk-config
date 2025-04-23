@@ -130,8 +130,8 @@
             key-positions = <22 23>;
         };
 
-        minus {
-            bindings = <&kp MINUS>;
+        underb {
+            bindings = <&kp UNDERSCORE>;
             key-positions = <7 8>;
         };
 
@@ -144,6 +144,11 @@
             bindings = <&kp ENTER>;
             key-positions = <3 31>;
         };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <7 8>;
+        };
     };
 
     keymap {
@@ -152,7 +157,7 @@
         DEF {
             bindings = <
 &kp Q            &kp W            &kp E         &alt_f4               &kp T        &kp Y      &kp U                  &kp I         &kp O            &kp P
-&aml A LEFT_WIN  &aml LEFT_ALT S  &aml LCTRL D  &s_left LEFT_SHIFT F  &kp G        &kp H      &s_right LEFT_SHIFT J  &amr LCTRL K  &amr LEFT_ALT L  &amr LEFT_GUI SQT
+&aml LEFT_WIN A  &aml LEFT_ALT S  &aml LCTRL D  &s_left LEFT_SHIFT F  &kp G        &kp H      &s_right LEFT_SHIFT J  &amr LCTRL K  &amr LEFT_ALT L  &amr LEFT_GUI SQT
 &kp Z            &kp X            &kp C         &kp V                 &kp B        &kp N      &kp M                  &kp COMMA     &kp PERIOD       &lt 1 SLASH
                                                 &lt 1 SPACE           &lt 4 TAB    &lt 3 RET  &lt 2 BACKSPACE
             >;

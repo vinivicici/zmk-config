@@ -89,8 +89,8 @@
             bindings = <&s_right LEFT_SHIFT J>, <&kp LEFT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-            keep-mods = <(MOD_LGUI)>;
+            mods = <(MOD_LGUI|MOD_LALT)>;
+            keep-mods = <(MOD_LGUI|MOD_LALT)>;
         };
 
         DOWNk: DOWNk {
@@ -109,8 +109,8 @@
             bindings = <&amr LEFT_WIN SQT>, <&kp RIGHT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-            keep-mods = <(MOD_LGUI)>;
+            mods = <(MOD_LGUI|MOD_LALT)>;
+            keep-mods = <(MOD_LGUI|MOD_LALT)>;
         };
 
         UPl: UPl {
@@ -230,9 +230,9 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans   &trans  &trans    &kp LC(Y)   &kp LC(V)  &kp LC(C)       &kp LC(X)     &kp LC(Z)
-&trans  &trans  &kp DEL  &trans  &trans    &kp LC(A)   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&trans  &trans  &trans   &trans  &trans    &trans      &home__    &end__          &trans        &trans
+&trans  &trans  &trans   &trans  &trans    &kp LC(Y)   &kp LC(V)  &kp LC(C)       &kp LC(X)          &kp LC(Z)
+&trans  &trans  &kp DEL  &trans  &trans    &kp LC(A)   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT
+&trans  &trans  &trans   &trans  &trans    &trans      &home__    &end__          &mt LS(HOME) HOME  &mt LS(END) END
                          &trans  &trans    &kp DELETE  &trans
             >;
         };

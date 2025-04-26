@@ -182,7 +182,7 @@
 
         return {
             bindings = <&kp ENTER>;
-            key-positions = <3 31>;
+            key-positions = <3 30>;
         };
 
         minus {
@@ -230,10 +230,10 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans   &trans  &trans    &kp LC(Y)   &kp LC(V)  &kp LC(C)       &kp LC(X)          &kp LC(Z)
-&trans  &trans  &kp DEL  &trans  &trans    &kp LC(A)   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT
-&trans  &trans  &trans   &trans  &trans    &trans      &home__    &end__          &mt LS(HOME) HOME  &mt LS(END) END
-                         &trans  &trans    &kp DELETE  &trans
+&trans  &trans  &trans   &trans  &trans    &msc SCRL_UP    &kp LC(V)  &kp LC(C)       &kp LC(X)          &kp LC(Z)
+&trans  &trans  &kp DEL  &trans  &trans    &msc SCRL_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT
+&trans  &trans  &trans   &trans  &trans    &trans          &home__    &end__          &mt LS(HOME) HOME  &mt LS(END) END
+                         &trans  &trans    &kp DELETE      &trans
             >;
         };
 

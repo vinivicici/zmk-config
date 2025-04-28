@@ -237,10 +237,10 @@
 
         DEF {
             bindings = <
-&kp Q            &kp W            &kp E         &alt_f4               &kp T        &kp Y      &kp U            &kp I      &kp O       &kp P
-&aml LEFT_WIN A  &aml LEFT_ALT S  &aml LCTRL D  &s_left LEFT_SHIFT F  &kp G        &kp H      &LEFTj           &DOWNk     &UPl        &RIGHTtick
-&kp Z            &kp X            &kp C         &kp V                 &kp B        &kp N      &kp M            &kp COMMA  &kp PERIOD  &lt 1 SLASH
-                                                &lt 1 SPACE           &lt 4 TAB    &lt 3 RET  &lt 2 BACKSPACE
+&kp Q            &kp W            &kp E         &alt_f4               &kp T        &kp Y      &kp U                   &kp I      &kp O       &kp P
+&aml LEFT_WIN A  &aml LEFT_ALT S  &aml LCTRL D  &s_left LEFT_SHIFT F  &kp G        &kp H      &LEFTj                  &DOWNk     &UPl        &RIGHTtick
+&kp Z            &kp X            &kp C         &kp V                 &kp B        &kp N      &kp M                   &kp COMMA  &kp PERIOD  &lt 1 SLASH
+                                                &lt 1 SPACE           &lt 4 TAB    &lt 3 RET  &backspace 2 BACKSPACE
             >;
         };
 

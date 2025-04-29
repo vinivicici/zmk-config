@@ -255,7 +255,7 @@
 
         NUM {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &trans           &trans  &trans    &trans    &trans        &trans
+&kp TILDE  &kp N1  &kp N2  &kp N3  &trans           &trans  &trans    &trans    &trans        &trans
 &trans     &kp N4  &kp N5  &kp N6  &kp SEMICOLON    &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &trans     &kp N7  &kp N8  &kp N9  &trans           &trans  &trans    &trans    &trans        &trans
                            &kp N0  &trans           &trans  &trans
@@ -264,7 +264,7 @@
 
         SYM {
             bindings = <
-&kp TILDE  &trans      &kp AT_SIGN  &kp HASH   &trans       &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &trans      &kp AT_SIGN  &kp HASH   &trans       &trans  &trans  &trans  &trans  &trans
 &trans     &kp DOLLAR  &kp PERCENT  &kp CARET  &kp COLON    &trans  &trans  &trans  &trans  &trans
 &trans     &trans      &trans       &trans     &kp PIPE     &trans  &trans  &trans  &trans  &trans
                                     &trans     &trans       &trans  &trans

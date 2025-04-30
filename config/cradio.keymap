@@ -260,10 +260,10 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans   &trans  &trans    &kp CLCK        &kp LC(V)  &kp LC(C)       &kp LC(X)          &kp LC(Z)
-&trans  &trans  &kp DEL  &trans  &trans    &msc SCRL_UP    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT
-&trans  &trans  &trans   &trans  &trans    &msc SCRL_DOWN  &home__    &end__          &mt LS(HOME) HOME  &mt LS(END) END
-                         &trans  &trans    &kp DELETE      &trans
+&trans  &trans  &kp DEL  &kp RET  &trans    &kp LC(A)       &kp LC(V)  &kp LC(C)       &kp LC(X)          &kp LC(Z)
+&trans  &trans  &trans   &trans   &trans    &msc SCRL_UP    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT
+&trans  &trans  &trans   &trans   &trans    &msc SCRL_DOWN  &home__    &end__          &mt LS(HOME) HOME  &mt LS(END) END
+                         &trans   &trans    &kp DELETE      &trans
             >;
         };
 
@@ -278,10 +278,10 @@
 
         SYM {
             bindings = <
-&kp GRAVE  &trans      &kp AT_SIGN  &kp HASH   &trans       &trans  &trans  &trans  &trans  &trans
-&trans     &kp DOLLAR  &kp PERCENT  &kp CARET  &kp COLON    &trans  &trans  &trans  &trans  &trans
-&trans     &trans      &trans       &trans     &kp PIPE     &trans  &trans  &trans  &trans  &trans
-                                    &trans     &trans       &trans  &trans
+&kp GRAVE  &trans      &kp AT_SIGN  &kp HASH   &trans       &trans          &trans          &trans          &trans        &trans
+&trans     &kp DOLLAR  &kp PERCENT  &kp CARET  &kp COLON    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&trans     &trans      &trans       &trans     &kp PIPE     &msc SCRL_DOWN  &trans          &trans          &mkp MB4      &trans
+                                    &trans     &trans       &trans          &trans
             >;
         };
 

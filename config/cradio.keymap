@@ -18,7 +18,7 @@
             hold-trigger-on-release;
         };
 
-        amr: alpha_mods_r {
+        amrwin: amrwin {
             compatible = "zmk,behavior-hold-tap";
             label = "AMR";
             bindings = <&kp>, <&kp>;
@@ -67,7 +67,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
             hold-trigger-key-positions = <32 33>;
@@ -96,7 +96,7 @@
         DOWNk: DOWNk {
             compatible = "zmk,behavior-mod-morph";
             label = "DOWNK";
-            bindings = <&amr LCTRL K>, <&kp DOWN>;
+            bindings = <&amrwin LCTRL K>, <&kp DOWN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -106,7 +106,7 @@
         RIGHTtick: RIGHTtick {
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHTTICK";
-            bindings = <&amr LEFT_WIN SQT>, <&kp RIGHT>;
+            bindings = <&amrwin LEFT_WIN SQT>, <&kp RIGHT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI|MOD_LALT)>;
@@ -116,7 +116,7 @@
         UPl: UPl {
             compatible = "zmk,behavior-mod-morph";
             label = "UPL";
-            bindings = <&amr LEFT_ALT L>, <&kp UP_ARROW>;
+            bindings = <&amrwin LEFT_ALT L>, <&kp UP_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -132,6 +132,20 @@
             quick-tap-ms = <190>;
             tapping-term-ms = <200>;
             flavor = "balanced";
+        };
+
+        amlwin: amlwin {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AMLWIN";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <32 33>;
         };
     };
 

@@ -239,11 +239,6 @@
             bindings = <&kp AMPERSAND>;
             key-positions = <20 21>;
         };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <17 18>;
-        };
     };
 
     macros {

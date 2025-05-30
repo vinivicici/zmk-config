@@ -239,6 +239,11 @@
             bindings = <&kp AMPERSAND>;
             key-positions = <20 21>;
         };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <17 18>;
+        };
     };
 
     macros {

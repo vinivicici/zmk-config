@@ -239,6 +239,11 @@
             bindings = <&kp DEL>;
             key-positions = <12 11>;
         };
+
+        capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <13 16>;
+        };
     };
 
     macros {

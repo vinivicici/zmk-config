@@ -259,39 +259,39 @@
             >;
         };
 
-        NAV {
+        navi {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp LC(A)       &kp LC(V)  &kp LC(C)       &kp LC(X)          &kp LC(Z)
-&trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT
-&trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &home__    &end__          &mt LS(HOME) HOME  &mt LS(END) END
-                        &trans  &trans    &kp DELETE      &trans
+        &trans  &trans  &trans  &trans  &trans    &kp LC(A)       &kp LC(V)  &kp LC(C)       &kp LC(X)          &kp LC(Z)
+        &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT
+ &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &home__    &end__          &mt LS(HOME) HOME  &mt LS(END) END  
+                         &trans  &trans    &kp DEL     &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp TILDE  &kp N1  &kp N2  &kp N3  &trans           &trans          &trans    &trans    &trans        &trans
-&trans     &kp N4  &kp N5  &kp N6  &kp SEMICOLON    &msc SCRL_UP    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&trans     &kp N7  &kp N8  &kp N9  &trans           &msc SCRL_DOWN  &trans    &trans    &trans        &trans
-                           &kp N0  &trans           &trans          &trans
+        &kp TILDE  &kp N1  &kp N2  &kp N3  &trans           &trans          &trans    &trans    &trans        &trans
+        &trans     &kp N4  &kp N5  &kp N6  &kp SEMICOLON    &msc SCRL_UP    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+ &trans     &kp N7  &kp N8  &kp N9  &trans           &msc SCRL_DOWN  &trans    &trans    &trans        &trans   
+                            &kp N0  &trans           &trans          &trans 
             >;
         };
 
         SYM {
             bindings = <
-&kp GRAVE  &trans         &kp AT_SIGN  &kp HASH   &trans       &trans          &trans          &trans          &trans        &trans
-&trans     &kp DOLLAR     &kp PERCENT  &kp CARET  &kp COLON    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&trans     &kp AMPERSAND  &trans       &trans     &kp PIPE     &msc SCRL_DOWN  &trans          &trans          &mkp MB4      &trans
-                                       &trans     &trans       &trans          &trans
+        &kp GRAVE  &trans         &kp AT_SIGN  &kp HASH   &trans       &trans          &trans          &trans          &trans        &trans
+        &trans     &kp DOLLAR     &kp PERCENT  &kp CARET  &kp COLON    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&trans     &kp AMPERSAND  &trans       &trans     &kp PIPE     &msc SCRL_DOWN  &trans          &trans          &mkp MB4      &trans         
+                                       &trans     &trans       &trans          &trans    
             >;
         };
 
         SYS {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &kp PRINTSCREEN    &trans          &kp C_VOL_DN    &kp C_MUTE      &kp C_VOLUME_UP  &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &studio_unlock     &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT
-&kp F12  &kp F7  &kp F8  &kp F9  &bt BT_CLR         &msc SCRL_DOWN  &ctrl_click     &trans          &mkp MB4         &trans
-                         &trans  &trans             &mkp MB1        &mkp MB2
+             &kp F10  &kp F1  &kp F2  &kp F3  &kp PRINTSCREEN    &trans          &kp C_VOL_DN    &kp C_MUTE      &kp C_VOLUME_UP  &trans
+             &kp F11  &kp F4  &kp F5  &kp F6  &bootloader        &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT
+  &kp F12  &kp F7  &kp F8  &kp F9  &bt BT_CLR         &msc SCRL_DOWN  &ctrl_click     &trans          &mkp MB4         &trans      
+                              &trans  &trans             &mkp MB1        &mkp MB2        
             >;
         };
     };

@@ -192,7 +192,7 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <16 17>;
+            key-positions = <6 7>;
         };
 
         plus {
@@ -223,6 +223,11 @@
         return {
             bindings = <&kp ENTER>;
             key-positions = <31 3>;
+        };
+
+        ralt {
+            bindings = <&kp RALT>;
+            key-positions = <17 16>;
         };
     };
 

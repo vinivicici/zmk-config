@@ -229,6 +229,11 @@
             bindings = <&kp RALT>;
             key-positions = <17 16>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 0>;
+        };
     };
 
     macros {

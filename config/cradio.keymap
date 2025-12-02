@@ -172,12 +172,12 @@
 
         leftbraket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <22 23>;
+            key-positions = <22 23 21>;
         };
 
         rightbraket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <23 24>;
+            key-positions = <23 22>;
         };
 
         underb {
